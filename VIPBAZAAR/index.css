@@ -72,4 +72,17 @@
     width: 1523px;
     
 }
-
+#gift{
+    line-height: 2;
+    margin-top: 20px;;
+    height: 243px;
+    width:100%;
+    color: white;
+    justify-content: center;
+    text-align: center;
+     background-image: url("https://www.jcrew.com/brand_creative/homepage2022/12-Dec/2022dec_1108_hp_w_gg_img0.jpg") ;
+     font-family: soleil,Helvetica,Arial,sans-serif;
+}
+#gift>.text{
+    padding-top: 50px;
+}

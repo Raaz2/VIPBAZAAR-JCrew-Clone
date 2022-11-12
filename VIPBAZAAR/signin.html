@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>i am signin</h1>
+    <div id="signup">
+        <h1>Please Enter Your Details</h1>
+        <form>
+          <input type="text" id="name" placeholder="Enter your name ">
+          <input type="email" id="email" placeholder="Enter your email">
+          <input type="password"  id="password" placeholder="Enter your password">
+          <input type="submit" value="Submit" />
+        </form>
+      </div>
+    </body>
+    <script>
+      document.querySelector("form").addEventListener("submit",sign);
+      let LSData=JSON.parse(localStorage.getItem("data"))||[]
+      function sign(event){
+          event.preventDefault()
+          let name=document.querySelector("#name").value;
+          let email=document.querySelector("#email").value;
+           let password=document.querySelector("#password").value;
+           let obj={name,email,password};
+           LSData.push(obj)
+          localStorage.data=JSON.stringify(LSData)
+          window.location="./login.html"
+        }
+    </script>
+</body>
+</html>
