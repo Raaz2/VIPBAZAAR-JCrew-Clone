@@ -5,7 +5,98 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- <link rel="stylesheet" href="index.css"> -->
     <link rel="stylesheet" href="index.css">
+    <style>
+        *{
+ margin: 0;
+ font-family: soleil,Helvetica,Arial,sans-serif;
+}
+#container{
+    
+    background-color: #fff;
+    width: 100%;
+    height:128px;
+}
+#container>div:nth-child(1){
+    display: flex;
+
+    border: 1px solid grey;
+    height: 60px;
+}
+#container>div:nth-child(1)>div:nth-child(1){
+
+    display: flex;
+    width: 15%;
+    justify-content: center;
+    align-items: center;
+}
+#container>div:nth-child(1)>div:nth-child(1)>img{
+    height: 164px;
+    width: 80%;
+}
+#container>div:nth-child(1)>div:nth-child(2){
+    width: 45%;
+}
+#container>div:nth-child(1)>div:nth-child(2)>ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 10px;
+}
+#container>div:nth-child(1)>div:nth-child(2)>ul>li{
+    list-style: none;
+    padding: 10px;
+    
+}
+#container>div:nth-child(1)>div:nth-child(2)>ul>li>a{
+        color: black;
+        text-decoration: none;
+        font-weight: 600;
+        
+}
+#container>div:nth-child(1)>div:nth-child(3){
+    /* border: 5px solid chocolate ; */
+    width: 40%;
+}
+#container>div:nth-child(2){
+    height: 68px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    letter-spacing: 1px;
+    font-size: 12px;
+    font-weight: 600;
+}
+#signin{
+    border: 0;
+    background-color: #fff;
+    font-weight: 600;
+}
+#cartlogo{
+    height: 44px;
+}
+#top-section>img{
+    height: 745px;
+    width: 1523px;
+    
+}
+#gift{
+    line-height: 2;
+    margin-top: 20px;;
+    height: 243px;
+    width:100%;
+    color: white;
+    justify-content: center;
+    text-align: center;
+     background-image: url("https://www.jcrew.com/brand_creative/homepage2022/12-Dec/2022dec_1108_hp_w_gg_img0.jpg") ;
+     font-family: soleil,Helvetica,Arial,sans-serif;
+}
+#gift>.text{
+    padding-top: 50px;
+}
+    </style>
 </head>
 <body>
 <div id="container">
@@ -27,7 +118,7 @@
         <div>
             <input type="text" placeholder="Search VIPBAZAAR">
             <button id="signin">Sign In</button>
-            <img id="cartlogo" src="https://www.seekpng.com/png/detail/621-6212255_cart-bag-png-icons.png" alt="">
+            <img id="cartlogo" src="https://cdn1.cronometer.com/2021/landing/cronometer-hero-graphic.svg" alt="">
         </div>
         
     </div>
@@ -36,5 +127,20 @@
 <div id="top-section">
     <img src="https://lh3.googleusercontent.com/MeulC7dKrI2v0wbdzvEwQiCNU6sQ4PhuuPR3gDCpx35yFKqgMOrUYDCXDkZZTgjqjeLQ0VUwBUXelHpeDJ_LRL5biQ6ih3oJpys63eozurlCw8obOZXjRmuqBxhqAzJmbtDxndIFJT2ACYLBK-QD5ZlcmIcrN-VNaawb50mbo2398pNN5htWoPiTyNfkTXlzAHB763zqqKGeZT_6Mi9ONCySXSczln_0Q3cjTqdCQG2l98TI3nLuG-dqirg908PriBJjkg5LjMAwO0en-s_XI24EnCx_Am2RR4UJyuuV_-ri2WWkaYk2g5b-tCvQIZPl3RE30JyU54TLWf_JFCfOEe8omNoERnNTa4loCd8xoYhWb3ndaWRtlFjEsX5g5OwKsSQGiFVUScs7bH-CZkscYwuCYrqKZGy5Frxk44Gh8JLMZYRYt1i1eEsdGGOFh6AjVHKENaFhAv_bwVcSQjbxUEK2pzBbTamZSSp8DLcFwplyhPW_TMdhLoCyrnFMSgUfhDSb9gutNYK1B9NQ7ooHzc_URDxOgImmk-QhYM-ugW6j3_MVF0jpkOAGTHtCcu2W7fYUIugZvvllHSxQcLatRrcRFxYGDj99EFTiSCNsfglHsO5wW70xVRQAoNNBUAszpiVCsOfRDJ8pj6Chl6MPuRA3wdYigbjTC8KQff6KMdQV8P4iM04ERd3Ys_DwWdO6HGSEZHqli5WFQe5VtC7ealxMEoIGB_FED94kl_gNgQHV_cSb-01fwd1EzgtSRmLrdrOG8Z2phUGkTiih4LGog9Z14ODjycihChZKRvQfkvX3jLI2DC_p7eg8RABNckauA3Gknj7_8YWLAIraxVDhxipRBwgBoklfWd-FCWoXBQj4-StlMy59aWHJw_U7SXehSR_GH-usYdJHqScn9vaX3ZfKocVMsm8j1YPu2U6rOnhoiw=w1886-h937-no?authuser=0" alt="">
 </div>
+ <div id="gift">
+    <div class="text">
+        <h1 style="line-height:2;">The Gift Guide</h1>
+    <p><b>Great holiday present are part of our heritage.   Here is our 2022 take...</b></p>
+    </div>
+    <div class="buttons-sp">
+        <span>Shop for her </span>
+        <span>Shop for him</span>
+        <span>Shop for girls</span>
+        <span>Shop for boys</span>
+        <span>Shop for the home</span>
+
+    </div>
+ </div>
 </body>
 </html>
+<script src="index.js"></script>
