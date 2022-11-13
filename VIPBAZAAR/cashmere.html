@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+          
+          #container{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 10px;
+
+        }
+      
+        div{
+            text-align: center;
+        }
+        img{
+            filter: drop-shadow(2px 4px 6px black);
+            text-align: center;
+       }
+       button{
+        margin:auto;
+        color: black;
+        background-color: white;
+        padding: 10px;
+
+       }
+
+</style>
+
+</head>
+<body>
+
+    <div id="container"></div>
+</body>
+</html>
+<script>
+    for(let i=0;i<26;i++){
+        let div=document.createElement("div")
+        let img=document.createElement("img");
+        img.setAttribute("src","https://www.jcrew.com/s7-img-facade/BA400_SU9450?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=480&hei=480")
+        let title=document.createElement("h5")
+        let best=document.createElement("h6")
+        let quick=document.createElement("button");
+        quick.innerText="QUICK SHOP"
+        best.innerText="Best Seller"
+        title.innerText="Cashmere classic fit crewneck sweater"
+        let price=document.createElement("h4")
+        price.innerText="INR 17,248"
+        img.append(quick)
+        div.append(img,best,title,price)
+        document.querySelector("#container").append(div)
+    }
+
+</script>
