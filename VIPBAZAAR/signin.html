@@ -5,17 +5,65 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+      body{
+        background-image:url("https://www.jcrew.com/brand_creative/homepage2022/11-Nov/2022nov_1025_hp_w_img10.jpg")
+      }
+      #signup{
+        opacity: 0.7;
+        height: 420px;
+    box-shadow: rgb(6 24 44 / 40%) 0px 0px 0px 2px, rgb(6 24 44 / 65%) 0px 4px 6px -1px, rgb(255 255 255 / 8%) 0px 1px 0px inset;
+    text-align: center;
+    width: 40%;
+    margin: auto;
+      }
+      form{
+        display: inline-grid;
+      }
+      input{
+        padding: 8px;
+      }
+      #forp{
+        text-decoration: none;
+      }
+      input[type="submit"]{
+        color: white;
+        background-color: black;
+      }
+      #signinbtn{
+        text-decoration: none;
+        color: #0161ff;
+        font-size: 14px;
+        font-weight: 700;
+        margin-top:17px ;
+      }
+      select{
+        padding: 8px;
+      }
+      #bottom{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+      }
+    </style>
 </head>
 <body>
-    <h1>i am signin</h1>
-    <div id="signup">
-        <h1>Please Enter Your Details</h1>
+  
+  <div id="signup">
+    
+    <div style="text-align:center; font-weight: 700; margin: 5px">Sign Up</div>
         <form>
-          <input type="text" id="name" placeholder="Enter your name ">
-          <input type="email" id="email" placeholder="Enter your email">
-          <input type="password"  id="password" placeholder="Enter your password">
-          <input type="submit" value="Submit" />
+          <input type="email" id="email" placeholder="Email Address *"> <br>
+          <input type="password"  id="password" placeholder="Create password *"> <br>
+
+         <select id="registerCountry" class="signin-form__input" aria-label="Select country of registration"><option value="US">United States</option><option value="AG">Antigua and Barbuda</option><option value="AW">Aruba</option><option value="AU">Australia</option><option value="AT">Austria</option><option value="BH">Bahrain</option><option value="BD">Bangladesh</option><option value="BB">Barbados</option><option value="BE">Belgium</option><option value="BZ">Belize</option><option value="BM">Bermuda</option><option value="BO">Bolivia</option><option value="BR">Brazil</option><option value="BN">Brunei</option><option value="BG">Bulgaria</option><option value="KH">Cambodia</option><option value="CA">Canada</option><option value="KY">Cayman Islands</option><option value="CL">Chile</option><option value="CN">China</option><option value="CO">Colombia</option><option value="CR">Costa Rica</option><option value="HR">Croatia</option><option value="CY">Cyprus</option><option value="CZ">Czech Republic</option><option value="DK">Denmark</option><option value="DM">Dominica</option><option value="DO">Dominican Republic</option><option value="EC">Ecuador</option><option value="EG">Egypt</option><option value="SV">El Salvador</option><option value="EE">Estonia</option><option value="FI">Finland</option><option value="FR">France</option><option value="GF">French Guiana</option><option value="DE">Germany</option><option value="GI">Gibraltar</option><option value="GR">Greece</option><option value="GD">Grenada</option><option value="GP">Guadeloupe</option><option value="GT">Guatemala</option><option value="HN">Honduras</option><option value="HK">Hong Kong</option><option value="HU">Hungary</option><option value="IS">Iceland</option><option value="IN">India</option><option value="ID">Indonesia</option><option value="IE">Ireland</option><option value="IL">Israel</option><option value="IT">Italy</option><option value="JM">Jamaica</option><option value="JP">Japan</option><option value="JE">Jersey</option><option value="JO">Jordan</option><option value="KW">Kuwait</option><option value="LV">Latvia</option><option value="LT">Lithuania</option><option value="LU">Luxembourg</option><option value="MO">Macau</option><option value="MV">Maldives</option><option value="MT">Malta</option><option value="MQ">Martinique</option><option value="MX">Mexico</option><option value="MC">Monaco</option><option value="MS">Montserrat</option><option value="NL">Netherlands</option><option value="NZ">New Zealand</option><option value="NI">Nicaragua</option><option value="NO">Norway</option><option value="OM">Oman</option><option value="PK">Pakistan</option><option value="PA">Panama</option><option value="PY">Paraguay</option><option value="PE">Peru</option><option value="PH">Philippines</option><option value="PL">Poland</option><option value="PT">Portugal</option><option value="QA">Qatar</option><option value="RE">Reunion</option><option value="RO">Romania</option><option value="RU">Russian Federation</option><option value="KN">Saint Kitts and Nevis</option><option value="LC">Saint Lucia</option><option value="SA">Saudi Arabia</option><option value="SG">Singapore</option><option value="SK">Slovakia</option><option value="SI">Slovenia</option><option value="KR">South Korea</option><option value="ES">Spain</option><option value="LK">Sri Lanka</option><option value="SE">Sweden</option><option value="CH">Switzerland</option><option value="TW">Taiwan</option><option value="TH">Thailand</option><option value="TT">Trinidad and Tobago</option><option value="TR">Turkey</option><option value="TC">Turks and Caicos Islands</option><option value="AE">United Arab Emirates</option><option value="UK">United Kingdom</option><option value="XX">Other</option></select></BR>
+         <div><input type="checkbox"><span>Remember me</span> <span><img style="width: 12px;" src="https://www.freeiconspng.com/thumbs/information-icon/information-icon-27.png" alt=""></span> 
+          <span><a href="" id="forp">Forgot Password?</a></span></div>
+         <br>
+          <input type="submit" value="CREATE AN ACCOUNT" />
         </form>
+        <p style="font-size:12px;">By clicking "Create an Account", you agree to our <a href="">Terms <br> of Use</a> and <a href="">Privacy Policy</a>, including the <a href="">Use of Cookies</a> <br> and the transfer of your personal information to the <br> United States, a jurisdiction that may not provide an <br> equivalent level of data protection to the laws in your <br> home country.</p>
+        <hr>
+        <span id="bottom"><p>Already have an account?</p> <a id="signinbtn" href="login.html">Sign in</a></span>
       </div>
     </body>
     <script>
@@ -23,12 +71,12 @@
       let LSData=JSON.parse(localStorage.getItem("data"))||[]
       function sign(event){
           event.preventDefault()
-          let name=document.querySelector("#name").value;
-          let email=document.querySelector("#email").value;
+           let email=document.querySelector("#email").value;
            let password=document.querySelector("#password").value;
-           let obj={name,email,password};
+           let obj={email,password};
            LSData.push(obj)
           localStorage.data=JSON.stringify(LSData)
+          alert("Account created successfully!")
           window.location="./login.html"
         }
     </script>
